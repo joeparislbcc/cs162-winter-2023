@@ -8,8 +8,7 @@ from typing import TextIO
 def open_file() -> TextIO:
     """Return a handle to the input file."""
     while True:
-        try:
-            file_name = input("Enter a file name to open: ")
+        file_name = input("Enter a file name to open: ")
         try:
             # It would be better to use a context handler here BUT for the sake
             # of this assignment we are not. The following line will silence
