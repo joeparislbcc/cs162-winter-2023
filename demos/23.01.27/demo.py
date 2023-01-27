@@ -10,6 +10,11 @@ def open_file() -> TextIO:
     while True:
         try:
             file_name = input("Enter a file name to open: ")
+            # It would be better to use a context handler here BUT for the sake
+            # of this assignment we are not. The following line will silence
+            # Pylint's warning about the issue.
+            #
+            # pylint: disable=consider-using-with
             data_file = open(file_name, mode="r", encoding="UTF-8")
         except FileNotFoundError:
             print(f"{file_name} not found, please try again.")
