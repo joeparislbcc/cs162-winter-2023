@@ -6,6 +6,7 @@ from typing import TextIO
 
 
 def open_file() -> TextIO:
+    """Return a handle to the input file."""
     while True:
         try:
             file_name = input("Enter a file name to open: ")
@@ -17,7 +18,7 @@ def open_file() -> TextIO:
 
 
 def build_data_dict(in_file) -> dict[str, dict[str, dict[str, dict[str, str]]]]:
-    # with open("cars.csv", mode="r", encoding="UTF-8") as in_file:
+    """Build the dictionary containing the car data."""
     csv_reader = csv.DictReader(in_file)
 
     data: dict[str, dict[str, dict[str, dict[str, str]]]] = {}  # holds all car info
@@ -56,6 +57,7 @@ def build_data_dict(in_file) -> dict[str, dict[str, dict[str, dict[str, str]]]]:
 
 
 def main():
+    """Make it go."""
     file_handle = open_file()
     data = build_data_dict(file_handle)
 
