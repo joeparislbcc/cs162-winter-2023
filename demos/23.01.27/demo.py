@@ -26,7 +26,7 @@ def build_data_dict(in_file) -> dict[str, dict[str, dict[str, dict[str, str]]]]:
     """Build the dictionary containing the car data."""
     csv_reader = csv.DictReader(in_file)
 
-    data: dict[str, dict[str, dict[str, dict[str, str]]]] = {}  # holds all car info
+    data: dict[str, dict[str, dict[str, dict[str, str]]]] = {}
 
     for row in csv_reader:
         # Make,Model,MPG,Cylinders,Displacement,Horsepower,Weight,Acceleration,ModelYear,Origin
