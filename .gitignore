@@ -1,6 +1,16 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode
 
+### Joe's ###
+scratch.html
+*analysis.zip
+**/r_analysis
+alphabet.txt
+monkeys.txt
+short.txt
+grading/
+*_solution*
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -188,6 +198,3 @@ poetry.toml
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
-
-grading/
-*_solution*
