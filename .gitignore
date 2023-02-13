@@ -9,7 +9,8 @@ alphabet.txt
 monkeys.txt
 short.txt
 grading/
-*_solution*
+*solution*
+*solution/**
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
