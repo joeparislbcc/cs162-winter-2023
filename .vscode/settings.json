@@ -5,5 +5,8 @@
 	// "window.zoomLevel": 4,
 	"cSpell.words": [
 		"Enbody"
+	],
+	"pylint.args": [
+		"--extension-pkg-whitelist=PyQt6"
 	]
 }
