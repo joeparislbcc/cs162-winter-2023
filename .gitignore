@@ -11,6 +11,8 @@ short.txt
 grading/
 *solution*
 *solution/**
+office_hours/
+caesar/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
