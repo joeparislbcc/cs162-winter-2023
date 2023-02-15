@@ -24,6 +24,38 @@
 			"args": [
 				"indian_food.csv"
 			]
+		},
+		{
+			"name": "Caesar CLI Encrypt",
+			"type": "python",
+			"request": "launch",
+			"program": "${file}",
+			"console": "integratedTerminal",
+			"justMyCode": true,
+			"cwd": "${fileDirname}",
+			"args": [
+				"-e",
+				"-r",
+				"1",
+				"short.txt",
+				"short-encrypted.txt"
+			]
+		},
+		{
+			"name": "Caesar CLI Decrypt",
+			"type": "python",
+			"request": "launch",
+			"program": "${file}",
+			"console": "integratedTerminal",
+			"justMyCode": true,
+			"cwd": "${fileDirname}",
+			"args": [
+				"-d",
+				"-r",
+				"1",
+				"short-encrypted.txt",
+				"short-decrypted.txt"
+			]
 		}
 	]
 }
