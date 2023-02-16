@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-# noqa
-
 # pylint: disable=missing-module-docstring,missing-class-docstring,missing-function-docstring,invalid-name,eval-used,broad-exception-caught,attribute-defined-outside-init,too-many-instance-attributes
 
 import sys
