@@ -19,10 +19,12 @@ class Stack:
         self.__data: deque[Any] = deque()
 
     def __str__(self) -> str:
+        """Return a human-readable string representation of the stack."""
         return f"{list(self.__data)}"
 
     def __repr__(self) -> str:
-        raise NotImplementedError()
+        """Return a string representation of the stack suitable for debugging."""
+        return str(self)
 
     def is_empty(self) -> bool:
         """Returns whether or not the stack is empty."""
@@ -52,7 +54,8 @@ if __name__ == "__main__":
     stack.push("b")
     stack.push("c")
 
-    print(stack)
+    print(f"{stack!s}")
+    print(f"{stack!r}")
 
     print(stack.pop())
     print(stack.pop())
